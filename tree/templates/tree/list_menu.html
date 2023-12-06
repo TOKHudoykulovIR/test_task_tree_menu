@@ -1,0 +1,5 @@
+{% for menu in menu_list %}
+    <li>
+        <a href="{% url 'tree:display-menu' menu.id %}">{{ menu.name }}</a>
+    </li>
+{% endfor %}
